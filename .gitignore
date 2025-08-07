@@ -28,3 +28,7 @@ replay_pid*
 /.settings
 src/module-info.java
 temp/Program.java
+src/lab02a/Program.java
+src/lab01b_Extra/Utils.java
+src/lab01b_Extra/Program.java
+src/lab01b_Extra/MoneyExchange.java
