@@ -19,7 +19,7 @@ public class Program {
 			vehicles.add(new Vehicle(0,lane++));
 		}
 		
-		//Cause an exception here by adding more vehicles than regPlates
+		//Catch an exception here by adding a vehicle after all Reg Plates are in use
 		try {
 		vehicles.add(new Vehicle(0,regPlates.length + 1));
 		}
