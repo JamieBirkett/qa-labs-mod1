@@ -1,4 +1,4 @@
-package Lab07;
+package lab07;
 
 import java.awt.Color;
 import java.awt.Point;
