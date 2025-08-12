@@ -6,8 +6,8 @@ public class Account implements Comparable<Account> {
 	private int id;
 	private double balance;
 	private String owner;
-	private static int sortType;
-	public static final int SortType_Owner = 2;
+	static int sortType;
+	public static final int SortType_Owner = 1;
 	public static final int SortType_Balance = 2;
 	
 	public Account(int id, String owner, double balance) {
@@ -51,6 +51,7 @@ public class Account implements Comparable<Account> {
 		sortType = type;
 		
 	}
+	
 
 	@Override
 	public int compareTo(Account o) {

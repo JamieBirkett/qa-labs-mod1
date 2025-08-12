@@ -15,24 +15,26 @@ public class Program {
 		accounts.add(new Account(7000, "Annie", 20500));
 		
 		System.out.println("Unsorted Accounts: \n--------------");
-		for (Account account : accounts) {
-			System.out.println(account.getDetails());
-		}
+		printCollection(accounts);
 		
 		Account.setSortType(Account.SortType_Balance);
 		Collections.sort(accounts);
+		
 		System.out.println("Sorted by balance: \n--------------");
-		for (Account account : accounts) {
-			System.out.println(account.getDetails());
-		}
+		printCollection(accounts);
 		
 		Account.setSortType(Account.SortType_Owner);
 		Collections.sort(accounts);
+		
 		System.out.println("Sorted by Owner: \n--------------");
+		printCollection(accounts);
+	}
+	
+	static void printCollection(ArrayList<Account> accounts) {
+		Collections.sort(accounts);
 		for (Account account : accounts) {
 			System.out.println(account.getDetails());
 		}
 	}
 	
-
 }
