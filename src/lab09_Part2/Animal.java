@@ -6,7 +6,6 @@ public abstract class Animal {
 	
 	public Animal(String name) {
 		super();
-		//this.animalType = animalType;
 		this.name = name;
 	}
 

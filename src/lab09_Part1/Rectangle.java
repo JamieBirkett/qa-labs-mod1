@@ -40,6 +40,5 @@ class Rectangle extends Shape{
 				);
 		return characteristics; 
 	}
-	
 
 }
