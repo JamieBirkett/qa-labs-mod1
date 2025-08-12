@@ -7,6 +7,8 @@ public class Account implements Comparable<Account> {
 	private double balance;
 	private String owner;
 	private static int sortType;
+	public static final int SortType_Owner = 2;
+	public static final int SortType_Balance = 2;
 	
 	public Account(int id, String owner, double balance) {
 		this.id = id;
@@ -45,17 +47,25 @@ public class Account implements Comparable<Account> {
 	}
 	
 	static void setSortType(int type) {
-		sortType = 1;
+		
+		sortType = type;
+		
 	}
 
 	@Override
 	public int compareTo(Account o) {
 		//Accounts by owner
-		if (sortType == 1) {
+		if (sortType == SortType_Owner) {
 			return this.owner.compareToIgnoreCase(o.owner); 
 		}
 		//Accounts by their balance type
-		return (int)(this.balance - o.balance);
+		else if(sortType == SortType_Balance) {
+			return (int)(this.balance - o.balance);
+		}
+		//Accounts by ID
+		else {
+			return (int)(this.id - o.id);
+		}
 	
 	};
 

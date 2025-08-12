@@ -18,14 +18,15 @@ public class Program {
 		for (Account account : accounts) {
 			System.out.println(account.getDetails());
 		}
-		Collections.sort(accounts);
 		
+		Account.setSortType(Account.SortType_Balance);
+		Collections.sort(accounts);
 		System.out.println("Sorted by balance: \n--------------");
 		for (Account account : accounts) {
 			System.out.println(account.getDetails());
 		}
 		
-		Account.setSortType(1);
+		Account.setSortType(Account.SortType_Owner);
 		Collections.sort(accounts);
 		System.out.println("Sorted by Owner: \n--------------");
 		for (Account account : accounts) {
