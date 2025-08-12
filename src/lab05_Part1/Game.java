@@ -64,7 +64,6 @@ public class Game extends Canvas {
 			if(shape.getShapeType() == ShapeType.RoundRectangle) {
 				//Last 2 parms Arc Width/Height
 				g.drawRoundRect(shape.x,shape.y, shape.w, shape.h, 20, 20);
-				//g.drawRoundRect(ALLBITS, ABORT, WIDTH, HEIGHT, WIDTH, HEIGHT);
 			}
 			else if(shape.getShapeType() == ShapeType.ThreeDRectangle) {
 				g.draw3DRect(shape.x,shape.y, shape.w, shape.h, true);

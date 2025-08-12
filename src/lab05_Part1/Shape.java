@@ -33,7 +33,6 @@ class Shape {
 	}
 	
 	public Color getColour() {
-		// TODO Auto-generated method stub
 		return colour;
 	}
 	
