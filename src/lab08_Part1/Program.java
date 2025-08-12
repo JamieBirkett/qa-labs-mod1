@@ -1,4 +1,4 @@
-package lab08;
+package lab08_Part1;
 
 import java.util.ArrayList;
 
@@ -31,24 +31,26 @@ public class Program {
 
 
 	static void processCars() {
-		StringBuilder sb = new StringBuilder("Car Details:");
+		StringBuilder sb = new StringBuilder("Car Details: \n---------------\n");
 		
 		for(Car car : cars) {
 
 			car.getToSixty();
 			car.accelerate(2);
-		
 			
 			int speed = car.getSpeed();
 			String model = car.getModel();
-			int turboFactor = 0;
 			
-			System.out.printf(String.format("\nModel: %s \nSpeed: %d \n", model, speed));
-		
-			if (car instanceof RacingCar) {
-				RacingCar racingCar = (RacingCar)car;
+			sb.append("Model: %s \nSpeed: %d \n");
+			
+			int turboFactor = 0;
+					
+			if (car instanceof RacingCar racingCar) {
+				
 				speed = racingCar.getSpeed();
 				turboFactor = racingCar.getTurboFactor();
+				
+				sb.append();
 			//	String racingCarDetails = String.format("Turbo Factor &d \n", turboFactor);
 				
 			}

@@ -1,4 +1,4 @@
-package lab08;
+package lab08_Part1;
 
 public class Car {
 	private String model;

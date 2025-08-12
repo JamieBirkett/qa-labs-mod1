@@ -1,9 +1,9 @@
-package lab08;
+package lab08_Part1;
 
 public class RacingCar extends Car {
 	private String driver;
 	private int turboFactor;
-
+	
 	public RacingCar(String model, int speed, String Driver, int turboFactor) {
 		super(model, speed);
 		setDriver(Driver);
@@ -31,7 +31,6 @@ public class RacingCar extends Car {
 		super.accelerate(seconds);
 		setSpeed(getSpeed() * getTurboFactor());
 	}
-
 	
 	
 }
