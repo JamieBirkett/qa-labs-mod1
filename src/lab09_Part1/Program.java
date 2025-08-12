@@ -19,8 +19,6 @@ public class Program {
 		shapes.add(circle);
 		shapes.add(sphere);
 		
-		//System.out.println(rectangle.getCharacteristics());
-		
 		for(Shape shape : shapes) {
 			System.out.println(shape.getCharacteristics());
 		}

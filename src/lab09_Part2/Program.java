@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Program {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
 		ArrayList<Animal> animals = new ArrayList<>();
 		
 		animals.add(new Duck("Mallard"));
