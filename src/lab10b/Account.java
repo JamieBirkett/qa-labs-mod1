@@ -6,7 +6,7 @@ public class Account implements Comparable<Account> {
 	private int id;
 	private double balance;
 	private String owner;
-	static int sortType;
+	private static int sortType;
 	
 	public Account(int id, String owner, double balance) {
 		this.id = id;
@@ -45,10 +45,7 @@ public class Account implements Comparable<Account> {
 	}
 	
 	static void setSortType(int type) {
-		if(type == 1) {
-			sortType = 1;
-		}
-			
+		sortType = 1;
 	}
 
 	@Override
